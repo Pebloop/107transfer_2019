@@ -10,10 +10,15 @@
 
 typedef struct data {
     int len;
-    int **numerator;
-    int **denominator;
+    double **numerator;
+    double **denominator;
 } data_t;
 
-int transfert(void);
+typedef struct nb_list {
+    double *list;
+    int len;
+} nb_list_t;
+
+int transfert(nb_list_t *lists);
 
 #endif /*TRANSFERT_H*/
